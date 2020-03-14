@@ -1,0 +1,20 @@
+{% extends 'base.html' %} {% block head %}
+<title>New Weekly Update Post</title>
+{% endblock %} {% block body %}
+<h1>New Post</h1>
+
+<hr>
+<h2>Create New Weekly Update Post:</h2>
+<form action='/posts' method='POST'>
+    <label for="title">WW00:</label>
+    <input class="form-control" type="text" name='title' id='title' placeholder="Enter WW00" aria-label="Enter Title">
+    <br>
+    <label for="author">Team Name:</label>
+    <input class="form-control" type="text" name='author' id='author' placeholder="Enter Team Name" aria-label="Enter Author">
+    <br>
+    <label for="content">Learn Grow Work Plan:</label>
+    <textarea class="form-control" name='content' id="content" placeholder="Enter Learn Grow Work Plan " aria-label="Enter Content" rows="3"></textarea>
+    <br>
+    <input type='submit' value='Post'>
+</form>
+<hr> {% endblock %}
